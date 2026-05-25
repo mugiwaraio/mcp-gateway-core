@@ -29,7 +29,7 @@ Shared framework extracted from `db-mcp-gateway` / `logs-mcp-gateway` / `monitor
 ## 引用方式
 
 ```bash
-go get github.com/mugiwaraio/mcp-gateway-core@v0.2.0
+go get github.com/mugiwaraio/mcp-gateway-core@v0.3.0
 ```
 
 `go.mod` 自动追加 require 行。
