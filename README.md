@@ -17,7 +17,7 @@ Shared framework extracted from `db-mcp-gateway` / `logs-mcp-gateway` / `monitor
 | 1 | `logging`：slog JSON handler + RequestAttrs helper（函数注入 getter） | v0.1.0 |
 | 2 | `httpaccess`：Middleware + IPExtractor + ctx 三件套 + traceparent 解析 | v0.2.0 |
 | 3 | `audit`：JSON-line + fsync + fail-closed Writer（Event struct 留 consumer） | v0.3.0 |
-| 4 | `breaker`：5 失败 / 30s OPEN / HALF_OPEN 探测（仅 logs / monitor 用） | v0.4.0 |
+| 4 | `breaker`：5 失败 / 30s OPEN / HALF_OPEN 探测，OnStateChange / OnTrip 回调注入 metrics（仅 logs / monitor 用） | v0.4.0 |
 | 5 | `config` 助手：envExpand / PAT 校验 / PATPrefix 常量 | v0.5.0 |
 
 ## Consumer 仓库
@@ -29,7 +29,7 @@ Shared framework extracted from `db-mcp-gateway` / `logs-mcp-gateway` / `monitor
 ## 引用方式
 
 ```bash
-go get github.com/mugiwaraio/mcp-gateway-core@v0.3.0
+go get github.com/mugiwaraio/mcp-gateway-core@v0.4.0
 ```
 
 `go.mod` 自动追加 require 行。
