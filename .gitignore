@@ -1,0 +1,10 @@
+bin/
+tmp/
+*.log
+*.jsonl
+.DS_Store
+.idea/
+.vscode/
+
+# claude code worktrees / cache
+.claude/
